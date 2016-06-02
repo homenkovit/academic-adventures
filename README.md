@@ -1,4 +1,4 @@
-# Hello boilerpalte
+# Install
 
 ```sh
 $ npm i 
