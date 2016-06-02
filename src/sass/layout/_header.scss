@@ -1,0 +1,39 @@
+.header {
+  background-color: #ffffff;
+  height: 85px;
+}
+
+.brand {
+  padding-top: 10px;
+  display: inline-block;
+  height: 60px;
+  float: left;
+  &__img {
+    width: 140px;
+    height: 60px;
+  }
+  &__text {
+    text-indent: -9999px;
+  }
+}
+
+.nav {
+  float: right;
+  &__list {
+    padding-top: 30px;
+  }
+  &__item {
+    display: inline-block;
+    margin-left: 16px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-family: $font-main;
+    @include font-size(16px);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

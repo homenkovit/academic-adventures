@@ -1,0 +1,78 @@
+extends _layout.jade
+block main
+  section.banner
+    .banner-container
+      img.banner__img(src="img/banner.jpg", alt="Banner")
+    .banner-container
+      .container
+        p.banner__slogan Your future is waiting at Academic Adventures USA
+  section.serv
+    .serv-container
+      .serv__item
+        img.serv__img(src="img/serv_tours.png", alt="tours image")
+        h3.serv__title academic tours
+        p.serv__desc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. justo commodo.
+        a.serv__btn(href="#") more
+      .serv__item
+        img.serv__img(src="img/serv_courses.png", alt="courses image")
+        h3.serv__title english courses
+        p.serv__desc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. justo commodo.
+        a.serv__btn(href="#") more
+      .serv__item
+        img.serv__img(src="img/serv_home.png", alt="home image")
+        h3.serv__title stay at home
+        p.serv__desc  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. justo commodo.
+        a.serv__btn(href="#") more
+  section.gallery
+    .container
+      h1.gallery__title Photos of happy students
+      .gallery-container
+        .gallery__item
+          img.gallery__img(src="img/gallery__img1.jpg", alt="Photo")
+        .gallery__item.gallery__item_width-480
+          img.gallery__img(src="img/gallery__img2.jpg", alt="Photo")
+        .gallery__item
+          img.gallery__img(src="img/gallery__img3.jpg", alt="Photo")
+        .gallery-col
+          .gallery__item
+            img.gallery__img(src="img/gallery__img4.jpg", alt="Photo")
+          .gallery__item
+            img.gallery__img(src="img/gallery__img7.jpg", alt="Photo")
+        .gallery__item.gallery__item_width-229
+          img.gallery__img(src="img/gallery__img5.jpg", alt="Photo")
+        .gallery__item.gallery__item_width-470
+          img.gallery__img(src="img/gallery__img6.jpg", alt="Photo")
+  section.how
+    .container
+      h1.how__title How it works
+      .how-container
+        .how__item
+          .how__icon
+            img.how__img(src="img/how__icon1.png", alt="Icon")
+          p.how__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .how__item
+          .how__icon
+            img.how__img(src="img/how__icon2.png", alt="Icon")
+          p.how__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .how__item
+          .how__icon
+            img.how__img(src="img/how__icon3.png", alt="Icon")
+          p.how__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .how__item
+          .how__icon
+            img.how__img(src="img/how__icon4.png", alt="Icon")
+          p.how__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  section.reviews
+    .container
+      h1.reviews__title Reviews
+      .reviews-container
+        .reviews__item
+          .reviews__avatar
+            img.avatar__img(src="img/reviews__avatar.jpg")
+          h2.reviews__name Name Surname, Country
+          p.reviews__comment Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+  section.application
+    .application-container
+      .container
+        h1.application__title Want to participate?
+        a.application__btn(href="javascript:void(0)") yes

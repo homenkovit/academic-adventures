@@ -1,0 +1,161 @@
+.footer {
+  height: 366px;
+  background-color: $color-main;
+  color: #ffffff;
+  &__top {
+    height: 86px;
+    border-bottom: 2px solid #969fa8;
+  }
+  &__bottom {
+    background-color: #19232d;
+    & p {
+      color: $color-main;
+      text-transform: uppercase;
+      font-family: $font-text;
+      @include font-size(14px);
+    }
+  }
+  &__main {
+    padding-top: 28px;
+    padding-bottom: 23px;
+    &-title {
+      margin-bottom: 20px;
+    }
+  }
+  &__about, &__contacts, &__form {
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__about {
+    width: 270px;
+    & > p {
+      @include font-size(12px);
+    }
+  }
+  &__contacts {
+    width: 170px;
+    margin-left: 125px;
+    & > a, p {
+      margin-bottom: 18px;
+      font-family: $font-text;
+      @include font-size(12px);
+    }
+    & > a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__form {
+    width: 240px;
+    margin-left: 127px;
+  }
+}
+.social {
+  float: right;
+  height: 100%;
+  &__list {
+    padding-top: 23px;
+  }
+  &__item, &__link {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  &__item {
+    margin-left: 15px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__link {
+    background-repeat: no-repeat;
+    background-position: center center;
+    &_fb {
+      background-image: url("../img/social__fb.png");
+      &:hover {
+        background-image: url("../img/social__fb_hovered.png");
+      }
+    }
+    &_vk {
+      background-image: url("../img/social__vk.png");
+      &:hover {
+        background-image: url("../img/social__vk_hovered.png");
+      }
+    }
+    &_tw {
+      background-image: url("../img/social__tw.png");
+      &:hover {
+        background-image: url("../img/social__tw_hovered.png");
+      }
+    }
+  }
+}
+.form {
+  font-family: $font-text;
+  @include font-size(12px);
+  &-row {
+    @include clearfix;
+  }
+  &__input, &__textarea {
+    float: right;
+    width: 165px;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-text;
+    @include font-size(12px);
+    color: $color-main;
+    padding-left: 7px;
+    outline: none;
+    &:focus {
+      border: 1px solid #3b99d7;
+    }
+  }
+  &__input {
+    height: 21px;
+    margin-bottom: 9px;
+  }
+  &__textarea {
+    height: 72px;
+    margin-bottom: 15px;
+    resize: none;
+  }
+  &__label {
+    float: left;
+  }
+  &__btn {
+    display: inline-block;
+    width: 74px;
+    height: 26px;
+    float: right;
+    padding: 0;
+    border: none;
+    margin-left: 17px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: $font-button_small;
+    @include font-size(12px);
+    &_clean {
+      background-color: $color-button_big;
+      border-bottom: 2px solid #dba308;
+      &:hover {
+        background-color: #dba308;
+      }
+    }
+    &_submit {
+      background-color: $color-button_small;
+      border-bottom: 2px solid #3388c0;
+      &:hover {
+        background-color: #3388c0;
+      }
+    }
+  }
+}
